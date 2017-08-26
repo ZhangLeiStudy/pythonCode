@@ -44,6 +44,8 @@ sys.setdefaultencoding('utf-8')
 # t.get_title()
 def main():
     opts = webdriver.ChromeOptions()
+#     opts.binary_location('/Applications/Google Chrome 2.app/Contents/MacOS/Google Chrome')
+#   directly write location in origin code of chromeoption.init for it didn't work on my computer
     driver = webdriver.Chrome(chrome_options=opts)
     driver.get("https://www.zhihu.com/question/28481779")
 
